@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "scientifica";
+}
+
+@font-face {
+  font-family: "scientifica";
+  src: url("../assets/scientifica.ttf") format("ttf");
+}
+
+/* Animation */
+
+@keyframes move-up {
+  from {
+    transform: translatey(0%);
+  }
+  to {
+    transform: translatey(100%);
+  }
+}
+
+.arrow-down {
+  animation: move-up 1s infinite ease-out alternate;
+}
