@@ -9,7 +9,7 @@ function Links({ title, description }) {
         {`
           .card {
             margin: 1rem;
-            flex-basis: 45%;
+            // flex-basis: 45%;
             padding: 1.5rem;
             text-align: center;
             color: inherit;

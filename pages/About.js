@@ -2,8 +2,8 @@ function About() {
   return (
     <div>
       <div className="container">
-        <div className="grid">
-          <div className="resumen">
+        <div className="row">
+          <div className="col-6">
             <h1 className="title">About me</h1>
             Adipisicing tenetur quod amet eveniet est fugiat Elit atque ullam
             eaque deserunt eaque! Sunt nam qui nemo sunt debitis? Facere saepe
@@ -12,49 +12,106 @@ function About() {
             explicabo modi Eos odio doloremque eligendi cum ipsum deleniti quia?
             Voluptas assumenda odit numquam explicabo asperiores Molestiae
             quaerat impedit voluptatum rem repudiandae Sapiente aliquid
-            deleniti?
-            <h1 className="title">Skills</h1>
+            delaeniti?
+            <h3 className="title h1">Skills</h3>
+            <div className="text-center">
+              <i aria-hidden className="fab fa-html5">
+                <span className="lang-info">html5</span>
+              </i>
+              <i aria-hidden className="fab fa-css3-alt">
+                {" "}
+                <span className="lang-info">css3</span>
+              </i>
+              <i aria-hidden className="fab fa-js">
+                {" "}
+                <span className="lang-info">Javascript</span>
+              </i>
+              <i aria-hidden className="fab fa-react">
+                {" "}
+                <span className="lang-info">react</span>
+              </i>
+              <i aria-hidden className="fab fa-node-js">
+                {" "}
+                <span className="lang-info">nodejs</span>
+              </i>
+              <i aria-hidden className="fab fa-git-alt">
+                {" "}
+                <span className="lang-info">git</span>
+              </i>
+              <i aria-hidden className="fab fa-github-alt">
+                {" "}
+                <span className="lang-info">github</span>
+              </i>
+              <i aria-hidden className="fas fa-terminal">
+                {" "}
+                <span className="lang-info">terminal</span>
+              </i>
+              <i aria-hidden className="fab fa-linux">
+                {" "}
+                <span className="lang-info">linux</span>
+              </i>
+              <i aria-hidden className="fab fa-npm">
+                <span className="lang-info">npm</span>
+              </i>
+              <h3 className="title h1">Other Skills</h3>
+              <i aria-hidden className="fab fa-python">
+                {" "}
+                <span className="lang-info">python</span>
+              </i>
+              <i aria-hidden className="fab fa-rust">
+                {" "}
+                <span className="lang-info">rust</span>
+              </i>
+            </div>
           </div>
-          <img
-            className="imagen"
-            src="https://wallpaperesque.com/wp-content/uploads/plixpapers1503/punisher_wallpaper_background_20257.jpg"
-            alt="Punisher"
-          />
+          <div className="col">
+            <img
+              id="myself"
+              src="https://wallpaperesque.com/wp-content/uploads/plixpapers1503/punisher_wallpaper_background_20257.jpg"
+              alt="Punisher"
+            />
+            <p href="#" className="text-center sign fs-5">
+              DMX
+            </p>
+          </div>
         </div>
       </div>
       <style jsx>{`
-        .container {
-          margin: 0 0 2vh 0;
-          padding: 0 0.5rem;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
         .title {
           text-align: center;
           text-transform: capitalize;
           margin: 2vh 0 2vh 0;
           text-decoration: underline;
         }
-        .grid {
-          display: grid;
-          grid-gap: 1vw 1vw;
+        i {
+          font-size: 1.8rem;
+          margin: 0 1vw 10px 1vw;
         }
-        .resumen {
-          grid-column-start: 1;
-          grid-column-start: 2;
+        .lang-info {
+          display: none;
+          transition: all 0.5s ease;
         }
-        .imagen {
-          grid-column-start: 2;
-          grid-column-start: 4;
+        i:hover > * {
+          display: block;
+          position: absolute;
         }
-        img {
+        #myself {
           transition: all 0.5s ease-out;
-          width: 40vw;
+          width: 39vw;
           heigth: auto;
           filter: grayscale(50%);
         }
-        img:hover {
+        .sign {
+          text-align: center;
+          color: #1d2021;
+          text-decoration: none;
+          transition: all 0.5s ease;
+        }
+        .sign:hover {
+          color: #689d6a;
+          text-decoration: underline #689d6a;
+        }
+        #myself:hover {
           filter: grayscale(0%);
         }
       `}</style>

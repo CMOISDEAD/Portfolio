@@ -3,13 +3,23 @@ import Navbar from "./Navbar";
 import Presentation from "./Presentation";
 import Repos from "./Repos";
 import About from "./About";
+import Contact from "./Contact";
+
+// Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Portafolio</title>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+          crossorigin="anonymous"
+        />
         <link rel="icon" href="/favicon.ico" />
+        <title>Portafolio</title>
       </Head>
 
       <Navbar />
@@ -17,31 +27,30 @@ export default function Home() {
         <Presentation />
         <About />
         <Repos />
+        <Contact />
       </main>
 
       <footer>
         <p>
           Made with <span className="green">❤️ </span>& coffe,{" "}
+          <a
+            href="https://github.com/CMOISDEAD"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See my Github.
+          </a>
         </p>
-        <a
-          href="https://github.com/CMOISDEAD"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          See my Github.
-        </a>
       </footer>
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
-
         main {
           padding: 5rem 0;
           flex: 1;
@@ -56,8 +65,8 @@ export default function Home() {
         }
 
         footer {
-          width: 100%;
-          height: 100px;
+          width: 100vw;
+          height: auto;
           border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
@@ -69,9 +78,9 @@ export default function Home() {
         }
 
         footer a {
-          display: flex;
+          /* display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: center; */
         }
 
         a {
