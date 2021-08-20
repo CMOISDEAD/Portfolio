@@ -1,9 +1,9 @@
 function About() {
   return (
     <div>
-      <div className="container">
+      <div className="">
         <div className="row">
-          <div className="col-6">
+          <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
             <h1 className="title">About me</h1>
             Adipisicing tenetur quod amet eveniet est fugiat Elit atque ullam
             eaque deserunt eaque! Sunt nam qui nemo sunt debitis? Facere saepe
@@ -64,7 +64,7 @@ function About() {
               </i>
             </div>
           </div>
-          <div className="col">
+          <div className="col-sm-4 col-md-5 text-center">
             <img
               id="myself"
               src="https://wallpaperesque.com/wp-content/uploads/plixpapers1503/punisher_wallpaper_background_20257.jpg"
@@ -90,6 +90,7 @@ function About() {
         .lang-info {
           display: none;
           transition: all 0.5s ease;
+          margin: 0;
         }
         i:hover > * {
           display: block;
@@ -107,7 +108,9 @@ function About() {
           text-decoration: none;
           transition: all 0.5s ease;
         }
-        .sign:hover {
+        .sign:hover,
+        i:hover,
+        .lang-info {
           color: #689d6a;
           text-decoration: underline #689d6a;
         }

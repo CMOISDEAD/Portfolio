@@ -17,6 +17,9 @@ function Navbar() {
           <a href="#">{`> Twitter`}</a>
         </li>
       </ul>
+      <button id="trigger" className="btn btn-outline-success">
+        x
+      </button>
       <style jsx>{`
         .Navbar {
           padding: 1vw;
@@ -54,6 +57,17 @@ function Navbar() {
         }
         .black {
           color: #1d2021;
+        }
+        #trigger {
+          display: none;
+        }
+        @media (max-width: 500px) {
+          #trigger {
+            display: inline-block;
+          }
+          .links > * {
+            display: none;
+          }
         }
       `}</style>
     </div>

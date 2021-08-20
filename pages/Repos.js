@@ -5,7 +5,7 @@ function Repos() {
     <div className="image">
       <div className="container">
         <h1 className="text-center">My web projects</h1>
-        <div className="card-group">
+        <div className="card-group mb-2">
           <Links
             title="House Cloud"
             description="A functionally Cloud in your house"
@@ -49,11 +49,10 @@ function Repos() {
             width: 100vw;
             height: auto;
             color: white;
+            padding: 1rem;
           }
           .text-center {
             text-align: center;
-          }
-          @media (max-width: 600px) {
           }
         `}
       </style>

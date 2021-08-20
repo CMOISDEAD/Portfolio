@@ -2,7 +2,7 @@ function Presentation() {
   return (
     <div className="main">
       <h1 className="title">
-        Welcome to my <span className="green">Portafolio</span>
+        Welcome to my <span className="green">Portfolio</span>
       </h1>
 
       <p className="description">
