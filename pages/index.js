@@ -16,7 +16,7 @@ export default function Home() {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
           integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link rel="icon" href="/favicon.ico" />
         <title>Portafolio</title>
@@ -92,11 +92,8 @@ export default function Home() {
           text-decoration: none;
         }
         @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
         }
+       }
       `}</style>
 
       <style jsx global>{`

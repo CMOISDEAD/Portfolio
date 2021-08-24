@@ -9,16 +9,30 @@ function Repos() {
           <Links
             title="House Cloud"
             description="A functionally Cloud in your house"
+            langs={["html5", "css3", "js", "node-js", "github"]}
+            date="today"
             className="card"
           />
           <Links
             title="Todo's"
             description="A ToDo app with a database connection"
+            langs={[
+              "html5",
+              "css3",
+              "js",
+              "react",
+              "node-js",
+              "sass",
+              "github",
+            ]}
+            date="today"
             className="card"
           />
           <Links
             title="Lol Tracker"
             description="League of legends games tracker"
+            langs={["html5", "css3", "js", "react", "github"]}
+            date="today"
             className="card"
           />
         </div>
@@ -27,16 +41,22 @@ function Repos() {
           <Links
             title="Terminal Cloud Client"
             description="A functionally Cloud Client in your terminal"
+            langs={["node-js", "js"]}
+            date="today"
             className="card"
           />
           <Links
             title="Rust Manager"
             description="A Schedulary wirtten in rust with a lot of features"
+            langs={["rust"]}
+            date="today"
             className="card"
           />
           <Links
             title="DropBar"
             description="A faster, customizable, hackable bar for your WM"
+            langs={["rust", "python"]}
+            date="today"
             className="card"
           />
         </div>

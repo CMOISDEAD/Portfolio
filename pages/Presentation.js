@@ -17,7 +17,7 @@ function Presentation() {
       <style jsx>
         {`
           .main {
-            margin: 26vh 0 0 0;
+            margin: 30vh 0 0 0;
           }
           .title a {
             color: #0070f3;

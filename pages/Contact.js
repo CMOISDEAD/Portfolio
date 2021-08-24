@@ -3,7 +3,7 @@ const Contact = () => {
     <div className="mb-2">
       <h1 className="title">Contact</h1>
       <div className="row justify-content-between">
-        <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-center">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
           <div>
             Adipisicing dolore quo expedita nostrum repudiandae Incidunt et vel
             quaerat asperiores mollitia Distinctio cupiditate alias
@@ -18,15 +18,18 @@ const Contact = () => {
             quaerat excepturi.
           </div>
         </div>
-        <div className="col-sm-4 col-md-5">
+        <div className="col">
           <ul className="links">
             <li className="bg-red">
+              <i aria-hidden className="fab fa-mailchimp" />
               <a href="">Mail</a>
             </li>
-            <li className="bg-yellow">
+            <li className="bg-blue">
+              <i aria-hidden className="fab fa-twitter" />
               <a href="">Twitter</a>
             </li>
-            <li className="bg-orange">
+            <li className="bg-dark-blue">
+              <i aria-hidden className="fab fa-linkedin" />
               <a href="">Linkedin</a>
             </li>
           </ul>
@@ -49,8 +52,9 @@ const Contact = () => {
           padding: 1.2rem;
           transition: all 0.1s ease;
         }
-        ul > li:hover {
-          font-size: 1.2rem;
+        ul > li:hover > * {
+          padding: 1vh;
+          color: #1d2021 !important;
         }
         ul > li > a {
           text-decoration: none;
@@ -60,23 +64,26 @@ const Contact = () => {
         ul > li > a:hover {
           color: #83c07c;
         }
+        i {
+          margin: 0 0.5rem;
+        }
         .bg-red {
           border: 1px solid #fb4834;
         }
-        .bg-yellow {
-          border: 1px solid #fabd2f;
+        .bg-blue {
+          border: 1px solid #1da1f2;
         }
-        .bg-orange {
-          border: 1px solid #fe8019;
+        .bg-dark-blue {
+          border: 1px solid #0e76a8;
         }
         .bg-red:hover {
           background: #fb4934;
         }
-        .bg-yellow:hover {
-          background: #fabd2f;
+        .bg-blue:hover {
+          background: #1da1f2;
         }
-        .bg-orange:hover {
-          background: #fe8019;
+        .bg-dark-blue:hover {
+          background: #0e76a8;
         }
       `}</style>
     </div>

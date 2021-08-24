@@ -1,24 +1,51 @@
-function Links({ title, description }) {
+function Links({ title, description, langs, date }) {
   return (
     <>
       <a className="card" href="#">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <img
+          className="card-img-top"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fecdiypg9opu21.jpg&f=1&nofb=1"
+          alt="punisher"
+        />
+        <h3 className="pt-1">{title}</h3>
+        <div className="card-body pt-0">
+          <p>{description}</p>
+        </div>
+        <div className="card-footer text-center">
+          {[
+            "langs: ",
+            langs.map((lang, key) => (
+              <i aria-hidden className={`fab fa-${lang}`} key={key} />
+            )),
+            " date:",
+            date,
+          ]}
+        </div>
       </a>
       <style jsx>
         {`
           .card {
-            margin: 1rem;
-            // flex-basis: 45%;
-            padding: 1.5rem;
+            margin: 0.5rem 0.5rem;
+            padding: 0;
             text-align: center;
             color: inherit;
             text-decoration: none;
             border: 1px solid #eaeaea;
+            border-radius: 0;
             background: #eaeaea;
             color: #1d2021;
-            border-radius: 0px;
             transition: color 0.15s ease, border-color 0.15s ease;
+          }
+          .card-img-top {
+            object-fit: cover !important;
+            height: 21vh;
+            width: auto;
+          }
+          .card-footer {
+            display: inline-block;
+          }
+          i {
+            margin: 0 0.2rem;
           }
           .card:hover,
           .card:focus,

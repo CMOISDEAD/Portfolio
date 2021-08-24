@@ -1,20 +1,22 @@
 function About() {
   return (
     <div>
-      <div className="">
+      <div>
         <div className="row">
-          <div className="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
             <h1 className="title">About me</h1>
-            Adipisicing tenetur quod amet eveniet est fugiat Elit atque ullam
-            eaque deserunt eaque! Sunt nam qui nemo sunt debitis? Facere saepe
-            iste veritatis consequatur vero. Nobis necessitatibus earum
-            provident ex Adipisicing consequuntur exercitationem nesciunt qui
-            explicabo modi Eos odio doloremque eligendi cum ipsum deleniti quia?
-            Voluptas assumenda odit numquam explicabo asperiores Molestiae
-            quaerat impedit voluptatum rem repudiandae Sapiente aliquid
-            delaeniti?
-            <h3 className="title h1">Skills</h3>
-            <div className="text-center">
+            <div className="aboutMe">
+              Adipisicing tenetur quod amet eveniet est fugiat Elit atque ullam
+              eaque deserunt eaque! Sunt nam qui nemo sunt debitis? Facere saepe
+              iste veritatis consequatur vero. Nobis necessitatibus earum
+              provident ex Adipisicing consequuntur exercitationem nesciunt qui
+              explicabo modi Eos odio doloremque eligendi cum ipsum deleniti
+              quia? Voluptas assumenda odit numquam explicabo asperiores
+              Molestiae quaerat impedit voluptatum rem repudiandae Sapiente
+              aliquid delaeniti?
+            </div>
+            <div className="text-center skill">
+              <h3 className="title h1">Skills</h3>
               <i aria-hidden className="fab fa-html5">
                 <span className="lang-info">html5</span>
               </i>
@@ -64,9 +66,8 @@ function About() {
               </i>
             </div>
           </div>
-          <div className="col-sm-4 col-md-5 text-center">
+          <div className="col text-center" id="myself">
             <img
-              id="myself"
               src="https://wallpaperesque.com/wp-content/uploads/plixpapers1503/punisher_wallpaper_background_20257.jpg"
               alt="Punisher"
             />
@@ -96,9 +97,9 @@ function About() {
           display: block;
           position: absolute;
         }
-        #myself {
+        #myself > img {
           transition: all 0.5s ease-out;
-          width: 39vw;
+          max-width: 30vw;
           heigth: auto;
           filter: grayscale(50%);
         }
@@ -114,9 +115,20 @@ function About() {
           color: #689d6a;
           text-decoration: underline #689d6a;
         }
-        #myself:hover {
+        #myself > img:hover {
           filter: grayscale(0%);
         }
+        /* @media (max-width: 800px) {
+          #myself {
+            display: none;
+          }
+          .row {
+            display: block !important;
+          }
+          .row:first-child {
+            min-width: 100vw;
+          }
+        } */
       `}</style>
     </div>
   );
