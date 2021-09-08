@@ -24,6 +24,10 @@ function About() {
                 {" "}
                 <span className="lang-info">css3</span>
               </i>
+              <i aria-hidden className="fab fa-sass">
+                {" "}
+                <span className="lang-info">sass</span>
+              </i>
               <i aria-hidden className="fab fa-js">
                 {" "}
                 <span className="lang-info">Javascript</span>
@@ -56,24 +60,30 @@ function About() {
                 <span className="lang-info">npm</span>
               </i>
               <h3 className="title h1">Other Skills</h3>
-              <i aria-hidden className="fab fa-python">
-                {" "}
-                <span className="lang-info">python</span>
-              </i>
-              <i aria-hidden className="fab fa-rust">
-                {" "}
-                <span className="lang-info">rust</span>
-              </i>
+              <div className="row">
+                <div className="col">
+                  <ul className="text-capitalize">
+                    <li>mysql</li>
+                    <li>php</li>
+                    <li>mongo</li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <ul className="text-capitalize">
+                    <li>sql</li>
+                    <li>rust</li>
+                    <li>python</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col text-center" id="myself">
             <img
               src="https://wallpaperesque.com/wp-content/uploads/plixpapers1503/punisher_wallpaper_background_20257.jpg"
               alt="Punisher"
+              className="mt-4"
             />
-            <p href="#" className="text-center sign fs-5">
-              DMX
-            </p>
           </div>
         </div>
       </div>
@@ -109,8 +119,10 @@ function About() {
           text-decoration: none;
           transition: all 0.5s ease;
         }
+        i:hover {
+          color: #689d6a;
+        }
         .sign:hover,
-        i:hover,
         .lang-info {
           color: #689d6a;
           text-decoration: underline #689d6a;
@@ -118,7 +130,7 @@ function About() {
         #myself > img:hover {
           filter: grayscale(0%);
         }
-        /* @media (max-width: 800px) {
+        @media (max-width: 800px) {
           #myself {
             display: none;
           }
@@ -128,7 +140,7 @@ function About() {
           .row:first-child {
             min-width: 100vw;
           }
-        } */
+        }
       `}</style>
     </div>
   );
