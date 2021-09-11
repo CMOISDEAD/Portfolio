@@ -4,6 +4,7 @@ import Presentation from "./Presentation";
 import Repos from "./Repos";
 import About from "./About";
 import Contact from "./Contact";
+import Banner from "./Banner";
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -23,11 +24,12 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <Banner />
       <main className="container">
         <section className="section1">
           <Presentation />
         </section>
-        <section className="section2">
+        <section className="section2 spikes">
           <hr />
           <About />
         </section>

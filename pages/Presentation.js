@@ -44,7 +44,7 @@ function Presentation() {
           }
           .arrow-down {
             font-size: 3rem;
-            margin: 18vh 0 18vh 0;
+            margin: 15vh 0 15vh 0;
             color: #689d6a;
           }
           code {

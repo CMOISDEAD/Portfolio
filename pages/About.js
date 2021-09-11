@@ -1,7 +1,7 @@
 function About() {
   return (
     <div>
-      <div>
+      <div className="">
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
             <h1 className="title">About me</h1>
@@ -78,11 +78,17 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="col text-center" id="myself">
+          <div className="col text-center mb-2" id="myself">
             <img
               src="https://wallpaperesque.com/wp-content/uploads/plixpapers1503/punisher_wallpaper_background_20257.jpg"
               alt="Punisher"
-              className="mt-4"
+              className="punisher"
+            />
+            <img
+              className="ddom"
+              // src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd13ezvd6yrslxm.cloudfront.net%2Fwp%2Fwp-content%2Fimages%2Fdoctor-doom-movie-e1524160306101.jpg&f=1&nofb=1"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fmultiversitystatic.s3.amazonaws.com%2Fuploads%2F2019%2F11%2FDMT_DoctorDoom_Featured.jpg%3Ffit%3D1042%252C1000&f=1&nofb=1"
+              alt="ddoom"
             />
           </div>
         </div>
@@ -109,9 +115,15 @@ function About() {
         }
         #myself > img {
           transition: all 0.5s ease-out;
+          width: 30vw;
           max-width: 30vw;
-          heigth: auto;
+          // height: auto;
+          height: 30vh !important;
           filter: grayscale(50%);
+          object-fit: cover;
+        }
+        ul {
+          list-style: none;
         }
         .sign {
           text-align: center;
