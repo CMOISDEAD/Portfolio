@@ -1,3 +1,5 @@
+import TypeIt from "typeit-react"
+
 function Presentation() {
   return (
     <div className="main">
@@ -6,12 +8,10 @@ function Presentation() {
       </h1>
 
       <p className="description">
-        Here you can see my <br />
-        <i>
-          <span className="green">Projects/Code/Motivations</span>
-        </i>
+        Here you can see my 
+        <br />
+          <TypeIt>Projects/Code/Motivations</TypeIt>
       </p>
-
       <div className="arrow-down">&darr;</div>
 
       <style jsx>
@@ -44,7 +44,7 @@ function Presentation() {
           }
           .arrow-down {
             font-size: 3rem;
-            margin: 15vh 0 15vh 0;
+            margin: 14vh 0 14vh 0;
             color: #689d6a;
           }
           code {

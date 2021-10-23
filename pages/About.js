@@ -1,7 +1,9 @@
+import Icons from "../components/Icons"
+
 function About() {
   return (
     <div>
-      <div className="">
+      <div>
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
             <h1 className="title">About me</h1>
@@ -17,59 +19,30 @@ function About() {
             </div>
             <div className="text-center skill">
               <h3 className="title h1">Skills</h3>
-              <i aria-hidden className="fab fa-html5">
-                <span className="lang-info">html5</span>
-              </i>
-              <i aria-hidden className="fab fa-css3-alt">
-                {" "}
-                <span className="lang-info">css3</span>
-              </i>
-              <i aria-hidden className="fab fa-sass">
-                {" "}
-                <span className="lang-info">sass</span>
-              </i>
-              <i aria-hidden className="fab fa-js">
-                {" "}
-                <span className="lang-info">Javascript</span>
-              </i>
-              <i aria-hidden className="fab fa-react">
-                {" "}
-                <span className="lang-info">react</span>
-              </i>
-              <i aria-hidden className="fab fa-node-js">
-                {" "}
-                <span className="lang-info">nodejs</span>
-              </i>
-              <i aria-hidden className="fab fa-git-alt">
-                {" "}
-                <span className="lang-info">git</span>
-              </i>
-              <i aria-hidden className="fab fa-github-alt">
-                {" "}
-                <span className="lang-info">github</span>
-              </i>
-              <i aria-hidden className="fas fa-terminal">
-                {" "}
-                <span className="lang-info">terminal</span>
-              </i>
-              <i aria-hidden className="fab fa-linux">
-                {" "}
-                <span className="lang-info">linux</span>
-              </i>
-              <i aria-hidden className="fab fa-npm">
-                <span className="lang-info">npm</span>
-              </i>
-              <h3 className="title h1">Other Skills</h3>
+              <Icons icon="fab fa-html5" name="html5"/>
+              <Icons icon="fab fa-css3-alt" name="css3"/>
+              <Icons icon="fab fa-sass" name="sass"/>
+              <Icons icon="fab fa-js" name="javascript"/>
+              <Icons icon="fab fa-react" name="react"/>
+              <Icons icon="fab fa-node-js" name="nodejs"/>
+              <Icons icon="fab fa-git-alt" name="git"/>
+              <Icons icon="fab fa-github-alt" name="github"/>
+              <Icons icon="fas fa-terminal" name="terminal"/>
+              <Icons icon="fab fa-linux" name="linux"/>
+              <Icons icon="fab fa-npm" name="npm"/>
+             <h3 className="title h1">Other Skills</h3>
               <div className="row">
                 <div className="col">
                   <ul className="text-capitalize">
-                    <li>mysql</li>
+                    <li>vim</li>
                     <li>php</li>
+                    <li>mysql</li>
                     <li>mongo</li>
                   </ul>
                 </div>
                 <div className="col">
                   <ul className="text-capitalize">
+                    <li>sh</li>
                     <li>sql</li>
                     <li>rust</li>
                     <li>python</li>
@@ -78,7 +51,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="col text-center mb-2" id="myself">
+          <div className="col text-center" id="myself">
             <img
               src="https://wallpaperesque.com/wp-content/uploads/plixpapers1503/punisher_wallpaper_background_20257.jpg"
               alt="Punisher"
@@ -100,19 +73,6 @@ function About() {
           margin: 2vh 0 2vh 0;
           text-decoration: underline;
         }
-        i {
-          font-size: 1.8rem;
-          margin: 0 1vw 10px 1vw;
-        }
-        .lang-info {
-          display: none;
-          transition: all 0.5s ease;
-          margin: 0;
-        }
-        i:hover > * {
-          display: block;
-          position: absolute;
-        }
         #myself > img {
           transition: all 0.5s ease-out;
           width: 30vw;
@@ -130,14 +90,6 @@ function About() {
           color: #1d2021;
           text-decoration: none;
           transition: all 0.5s ease;
-        }
-        i:hover {
-          color: #689d6a;
-        }
-        .sign:hover,
-        .lang-info {
-          color: #689d6a;
-          text-decoration: underline #689d6a;
         }
         #myself > img:hover {
           filter: grayscale(0%);
