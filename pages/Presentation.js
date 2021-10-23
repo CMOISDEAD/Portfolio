@@ -10,7 +10,7 @@ function Presentation() {
       <p className="description">
         Here you can see my 
         <br />
-          <TypeIt>Projects/Code/Motivations</TypeIt>
+          <span className="green">Projects/Code/Motivations</span>
       </p>
       <div className="arrow-down">&darr;</div>
 
